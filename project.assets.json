@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\xxmic\\.nuget\\packages\\": {}
+    "C:\\Users\\xxmic\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xxmic\\Desktop\\WebAPP\\GameStore.Api\\GameStore.Api.csproj",
-      "projectName": "GameStore.Api",
-      "projectPath": "C:\\Users\\xxmic\\Desktop\\WebAPP\\GameStore.Api\\GameStore.Api.csproj",
+      "projectUniqueName": "C:\\Users\\xxmic\\Desktop\\GameStore\\MyConsoleApp\\MyConsoleApp.csproj",
+      "projectName": "MyConsoleApp",
+      "projectPath": "C:\\Users\\xxmic\\Desktop\\GameStore\\MyConsoleApp\\MyConsoleApp.csproj",
       "packagesPath": "C:\\Users\\xxmic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xxmic\\Desktop\\WebAPP\\GameStore.Api\\obj\\",
+      "outputPath": "C:\\Users\\xxmic\\Desktop\\GameStore\\MyConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\xxmic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\xxmic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,9 +68,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

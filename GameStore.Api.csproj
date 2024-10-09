@@ -6,4 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <Target Name="_CopyOutOfDateSourceItemsToOutputDirectory" Condition=" '@(_SourceItemsToCopyToOutputDirectory)' != '' ">
+    <Copy SourceFiles="@(_SourceItemsToCopyToOutputDirectory)"
+          DestinationFiles="@(_SourceItemsToCopyToOutputDirectory->'$(OutDir)%(TargetPath)')"
+          OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+          Retries="$(CopyRetryCount)"
+          RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+          UseHardlinksIfPossible="$(CreateHardLinksForAdditionalFilesIfPossible)"
+          UseSymboliclinksIfPossible="$(CreateSymbolicLinksForAdditionalFilesIfPossible)" />
+    <Output TaskParameter="DestinationFiles" ItemName="FileWrites"/>
+  </Target>
+
 </Project>
